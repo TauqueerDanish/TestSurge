@@ -29,11 +29,11 @@ jobs:
       - name: Install NodeJS
         uses: actions/instal-node@v2-beta
         with:
-          node-version: 12
-     - name: Install Surge
-       run: npm install -g surge
-     - name: Run Surge
-       run: surge ./ TestSurge.surge.sh --token ${{secrets.testsurgekey}}
+          node-version: 12 
+      - name: install surge
+        run: npm install -g surge
+      - name: Run Surge
+        run: surge ./ TestSurge.surge.sh --token ${{secrets.testsurgekey}}
         
         
         
