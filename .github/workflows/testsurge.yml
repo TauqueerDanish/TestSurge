@@ -33,7 +33,7 @@ jobs:
       - name: install surge
         run: npm install -g surge
       - name: Run Surge
-        run: surge ./ TestSurge.surge.sh --token ${{secrets.testsurgekey}}
+        run: surge ./ TestSurget1t1.surge.sh --token ${{secrets.testsurgekey}}
         
         
         
